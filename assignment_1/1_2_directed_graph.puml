@@ -1,0 +1,17 @@
+@startuml
+digraph G {
+    node [shape=circle];
+
+    A -> B;
+    A -> D;
+
+    B -> B;
+    B -> C;
+
+    C -> C;
+    C -> D;
+    
+    D -> A;
+    D -> D;
+}
+@enduml
