@@ -1,0 +1,26 @@
+@startuml
+digraph G {
+    node [shape=square];
+
+    A [label="Step A"];
+    B [label="Step B"];
+
+    C1 [label="Control 1"];
+    C2 [label="Control 2"];
+
+    F [label="Finished"];
+
+    AT1 [label="Attempt Fix 1"];
+    AT2 [label="Attempt Fix 2"];
+
+    T [label="Trash"];
+
+    A -> C1 [label="1"];
+    B -> C2 [label="1"];
+
+    C1 -> B [label="0.7"];
+
+
+
+}
+@enduml
