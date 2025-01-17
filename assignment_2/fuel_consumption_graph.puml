@@ -1,0 +1,18 @@
+@startuml
+digraph G {
+    node [shape=circle];
+
+    rankdir=TB; // Top to Bottom layout
+    nodesep=1.5; // Increase the separation between nodes
+
+    { rank=same; A; }
+    { rank=same; C; B }
+    { rank=same; D }
+
+    A -> B [label="80km/h - 60km - 0.75h - 4.40l", labeldistance=2, labelangle=45];
+    A -> C [label="110km/h - 100km - 0.91h - 9.31l", labeldistance=2, labelangle=45];
+    B -> C [label="80km/h - 50km - 0.62h - 3.67l", labeldistance=2, labelangle=45];
+    B -> D [label="70km/h - 100km - 1.43h - 7.01l", labeldistance=2, labelangle=45];
+    C -> D [label="90km/h - 40km - 0.44h - 3.18l", labeldistance=2, labelangle=45];
+}
+@enduml
